@@ -1,0 +1,17 @@
+{
+  "happy": [
+    "Who's a pretty deploy?",
+    "Pieces of eight! Pieces of eight!",
+    "No internet, no problem.",
+    "I only talk to localhost now."
+  ],
+  "grumpy": [
+    "Who moved my CDN?",
+    "Squawk. The update check timed out again.",
+    "Telemetry? On this island? Never."
+  ],
+  "sleepy": [
+    "Wake me when the ferry comes.",
+    "Zzz. Air gap. Zzz."
+  ]
+}

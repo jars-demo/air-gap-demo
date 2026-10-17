@@ -1,0 +1,21 @@
+[project]
+name = "air-gap-lab"
+version = "0.1.0"
+description = "Ship an app into a network with no internet: catch phone-homes, pack, seal, ferry, land and roll back."
+license = "MIT"
+requires-python = ">=3.12"
+# parrot's one dependency. ferry, the deploy tool, uses the standard library only.
+dependencies = ["rich==14.1.0"]
+
+[tool.uv]
+package = false
+exclude-newer = "2026-10-01T00:00:00Z"
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["dock", "island"]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]  # the formatter wraps code; long strings stay readable
