@@ -16,7 +16,7 @@ def main() -> None:
     parser.add_argument("--selftest", action="store_true", help="ask for one squawk, then stop")
     parser.add_argument("--mood", default="happy", help="the mood to ask for in the selftest")
     args = parser.parse_args()
-    console = Console(highlight=False)
+    console = Console(highlight=False, soft_wrap=True)
 
     started = time.perf_counter()
     telemetry.ping()
